@@ -1808,14 +1808,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="8.4" y1="4.25" x2="8.4" y2="4" width="0.127" layer="52"/>
 <wire x1="8.4" y1="4" x2="13.4" y2="4" width="0.127" layer="52"/>
 <wire x1="13.4" y1="4" x2="13.4" y2="3.25" width="0.127" layer="52"/>
-<dimension x1="-0.75" y1="7.5" x2="-4" y2="7.5" x3="-2.375" y3="9.25" textsize="1.27" layer="21"/>
-<dimension x1="8.4" y1="4.25" x2="-0.75" y2="4.25" x3="3.825" y3="9.25" textsize="1.27" layer="21"/>
 <wire x1="13.4" y1="3.25" x2="16.4" y2="3.25" width="0.127" layer="52"/>
 <wire x1="16.4" y1="3.25" x2="16.4" y2="1.75" width="0.127" layer="52"/>
 <wire x1="16.4" y1="1.75" x2="23.4" y2="1.75" width="0.127" layer="52"/>
-<dimension x1="8.4" y1="4" x2="13.4" y2="4" x3="10.9" y3="9.25" textsize="1.27" layer="21"/>
-<dimension x1="13.4" y1="3.25" x2="16.4" y2="3.25" x3="14.9" y3="9.25" textsize="1.27" layer="21"/>
-<dimension x1="16.4" y1="1.75" x2="23.4" y2="1.75" x3="19.9" y3="9.25" textsize="1.27" layer="21"/>
 </package>
 </packages>
 <symbols>
