@@ -465,41 +465,6 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 </deviceset>
 </devicesets>
 </library>
-<library name="supply2">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
-GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
-Please keep in mind, that these devices are necessary for the
-automatic wiring of the supply signals.&lt;p&gt;
-The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
-In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="AGND">
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<text x="-2.667" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AGND" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="AGND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -2010,22 +1975,18 @@ SMT- SWCH-08247</description>
 <part name="OK1" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK2" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="SUPPLY1" library="supply2" deviceset="AGND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK3" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK4" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY2" library="supply2" deviceset="AGND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK5" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK6" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY3" library="supply2" deviceset="AGND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK7" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK8" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY4" library="supply2" deviceset="AGND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED" device="1206"/>
@@ -2033,7 +1994,6 @@ SMT- SWCH-08247</description>
 <part name="D4" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="U$10" library="tpa152" deviceset="TPA152D" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="SUPPLY11" library="supply2" deviceset="AGND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20K"/>
@@ -2049,22 +2009,18 @@ SMT- SWCH-08247</description>
 <part name="U$5" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK9" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK10" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY5" library="supply2" deviceset="AGND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="U$6" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK11" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK12" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY6" library="supply2" deviceset="AGND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK13" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK14" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY7" library="supply2" deviceset="AGND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="U$8" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK15" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK16" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
-<part name="SUPPLY8" library="supply2" deviceset="AGND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="D5" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="D6" library="SparkFun-LED" deviceset="LED" device="1206"/>
@@ -2081,16 +2037,11 @@ SMT- SWCH-08247</description>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20K"/>
-<part name="SUPPLY12" library="supply2" deviceset="AGND" device=""/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="330uF"/>
-<part name="SUPPLY13" library="supply2" deviceset="AGND" device=""/>
 <part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R24" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20K"/>
-<part name="SUPPLY14" library="supply2" deviceset="AGND" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="330uF"/>
-<part name="SUPPLY15" library="supply2" deviceset="AGND" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
-<part name="SUPPLY16" library="supply2" deviceset="AGND" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
@@ -2107,6 +2058,20 @@ SMT- SWCH-08247</description>
 <part name="S8" library="SparkFun-Retired" deviceset="TAC_SWITCH" device="PTH"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2127,30 +2092,18 @@ SMT- SWCH-08247</description>
 <instance part="OK2" gate="G$1" x="40.64" y="200.66" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="172.72" y="0"/>
-<instance part="SUPPLY1" gate="G$1" x="25.4" y="185.42" smashed="yes">
-<attribute name="VALUE" x="25.527" y="183.515" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND1" gate="1" x="53.34" y="177.8"/>
 <instance part="U$1" gate="G$1" x="10.16" y="165.1" rot="MR180"/>
 <instance part="OK3" gate="G$1" x="40.64" y="149.86" rot="MR0"/>
 <instance part="OK4" gate="G$1" x="40.64" y="165.1" rot="MR0"/>
-<instance part="SUPPLY2" gate="G$1" x="25.4" y="149.86" smashed="yes">
-<attribute name="VALUE" x="25.527" y="147.955" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND2" gate="1" x="53.34" y="142.24"/>
 <instance part="U$2" gate="G$1" x="10.16" y="129.54" rot="MR180"/>
 <instance part="OK5" gate="G$1" x="40.64" y="114.3" rot="MR0"/>
 <instance part="OK6" gate="G$1" x="40.64" y="129.54" rot="MR0"/>
-<instance part="SUPPLY3" gate="G$1" x="25.4" y="114.3" smashed="yes">
-<attribute name="VALUE" x="25.527" y="112.395" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND3" gate="1" x="53.34" y="106.68"/>
 <instance part="U$3" gate="G$1" x="10.16" y="93.98" rot="MR180"/>
 <instance part="OK7" gate="G$1" x="40.64" y="78.74" rot="MR0"/>
 <instance part="OK8" gate="G$1" x="40.64" y="93.98" rot="MR0"/>
-<instance part="SUPPLY4" gate="G$1" x="25.4" y="78.74" smashed="yes">
-<attribute name="VALUE" x="25.527" y="76.835" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND4" gate="1" x="53.34" y="71.12"/>
 <instance part="D1" gate="G$1" x="58.42" y="193.04"/>
 <instance part="D2" gate="G$1" x="58.42" y="157.48"/>
@@ -2158,7 +2111,6 @@ SMT- SWCH-08247</description>
 <instance part="D4" gate="G$1" x="58.42" y="86.36"/>
 <instance part="U$10" gate="G$1" x="86.36" y="30.48"/>
 <instance part="SUPPLY10" gate="G$1" x="71.12" y="35.56"/>
-<instance part="SUPPLY11" gate="G$1" x="71.12" y="20.32"/>
 <instance part="C1" gate="G$1" x="43.18" y="33.02" rot="R90"/>
 <instance part="C2" gate="G$1" x="43.18" y="25.4" rot="R90"/>
 <instance part="R1" gate="G$1" x="53.34" y="33.02"/>
@@ -2174,30 +2126,18 @@ SMT- SWCH-08247</description>
 <instance part="U$5" gate="G$1" x="269.24" y="200.66" rot="R180"/>
 <instance part="OK9" gate="G$1" x="238.76" y="185.42"/>
 <instance part="OK10" gate="G$1" x="238.76" y="200.66"/>
-<instance part="SUPPLY5" gate="G$1" x="254" y="185.42" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="253.873" y="183.515" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="GND5" gate="1" x="226.06" y="177.8" rot="MR0"/>
 <instance part="U$6" gate="G$1" x="269.24" y="165.1" rot="R180"/>
 <instance part="OK11" gate="G$1" x="238.76" y="149.86"/>
 <instance part="OK12" gate="G$1" x="238.76" y="165.1"/>
-<instance part="SUPPLY6" gate="G$1" x="254" y="149.86" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="253.873" y="147.955" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="GND6" gate="1" x="226.06" y="142.24" rot="MR0"/>
 <instance part="U$7" gate="G$1" x="269.24" y="129.54" rot="R180"/>
 <instance part="OK13" gate="G$1" x="238.76" y="114.3"/>
 <instance part="OK14" gate="G$1" x="238.76" y="129.54"/>
-<instance part="SUPPLY7" gate="G$1" x="254" y="114.3" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="253.873" y="112.395" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="GND7" gate="1" x="226.06" y="106.68" rot="MR0"/>
 <instance part="U$8" gate="G$1" x="269.24" y="93.98" rot="R180"/>
 <instance part="OK15" gate="G$1" x="238.76" y="78.74"/>
 <instance part="OK16" gate="G$1" x="238.76" y="93.98"/>
-<instance part="SUPPLY8" gate="G$1" x="254" y="78.74" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="253.873" y="76.835" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="GND8" gate="1" x="226.06" y="71.12" rot="MR0"/>
 <instance part="D5" gate="G$1" x="220.98" y="193.04" rot="MR0"/>
 <instance part="D6" gate="G$1" x="220.98" y="157.48" rot="MR0"/>
@@ -2220,9 +2160,7 @@ SMT- SWCH-08247</description>
 <attribute name="NAME" x="112.8014" y="11.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="112.522" y="19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY12" gate="G$1" x="114.3" y="7.62"/>
 <instance part="C4" gate="G$1" x="119.38" y="25.4" rot="R270"/>
-<instance part="SUPPLY13" gate="G$1" x="127" y="7.62"/>
 <instance part="R23" gate="G$1" x="127" y="40.64" smashed="yes" rot="MR270">
 <attribute name="NAME" x="130.5814" y="46.99" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="130.302" y="39.37" size="1.778" layer="96" rot="MR270"/>
@@ -2231,11 +2169,8 @@ SMT- SWCH-08247</description>
 <attribute name="NAME" x="112.8014" y="46.99" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="112.522" y="39.37" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="114.3" y="50.8" rot="MR180"/>
 <instance part="C5" gate="G$1" x="119.38" y="33.02" rot="MR90"/>
-<instance part="SUPPLY15" gate="G$1" x="127" y="50.8" rot="MR180"/>
 <instance part="C6" gate="G$1" x="101.6" y="17.78" rot="R180"/>
-<instance part="SUPPLY16" gate="G$1" x="101.6" y="7.62"/>
 <instance part="SUPPLY17" gate="G$1" x="149.86" y="190.5"/>
 <instance part="GND10" gate="1" x="149.86" y="185.42"/>
 <instance part="GND11" gate="1" x="116.84" y="193.04" rot="R180"/>
@@ -2252,6 +2187,20 @@ SMT- SWCH-08247</description>
 <instance part="S8" gate="S" x="154.94" y="106.68"/>
 <instance part="GND9" gate="1" x="127" y="104.14"/>
 <instance part="GND14" gate="1" x="165.1" y="104.14"/>
+<instance part="GND15" gate="1" x="71.12" y="20.32"/>
+<instance part="GND17" gate="1" x="114.3" y="7.62"/>
+<instance part="GND18" gate="1" x="127" y="7.62"/>
+<instance part="GND16" gate="1" x="101.6" y="7.62"/>
+<instance part="GND19" gate="1" x="114.3" y="50.8" rot="R180"/>
+<instance part="GND20" gate="1" x="127" y="50.8" rot="R180"/>
+<instance part="GND21" gate="1" x="25.4" y="78.74"/>
+<instance part="GND22" gate="1" x="25.4" y="114.3"/>
+<instance part="GND23" gate="1" x="25.4" y="149.86"/>
+<instance part="GND24" gate="1" x="25.4" y="185.42"/>
+<instance part="GND25" gate="1" x="254" y="78.74" rot="MR0"/>
+<instance part="GND26" gate="1" x="254" y="114.3" rot="MR0"/>
+<instance part="GND27" gate="1" x="254" y="149.86" rot="MR0"/>
+<instance part="GND28" gate="1" x="254" y="185.42" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -2280,81 +2229,6 @@ SMT- SWCH-08247</description>
 <pinref part="U$4" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="203.2" x2="33.02" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="OK2" gate="G$1" pin="COL"/>
-</segment>
-</net>
-<net name="AGND" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<pinref part="SUPPLY1" gate="G$1" pin="AGND"/>
-<wire x1="25.4" y1="190.5" x2="25.4" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="1"/>
-<pinref part="SUPPLY2" gate="G$1" pin="AGND"/>
-<wire x1="25.4" y1="154.94" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY3" gate="G$1" pin="AGND"/>
-<wire x1="25.4" y1="119.38" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
-<pinref part="SUPPLY4" gate="G$1" pin="AGND"/>
-<wire x1="25.4" y1="83.82" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$10" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY11" gate="G$1" pin="AGND"/>
-<wire x1="73.66" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="25.4" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<junction x="71.12" y="25.4"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="1"/>
-<pinref part="SUPPLY5" gate="G$1" pin="AGND"/>
-<wire x1="254" y1="190.5" x2="254" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$6" gate="G$1" pin="1"/>
-<pinref part="SUPPLY6" gate="G$1" pin="AGND"/>
-<wire x1="254" y1="154.94" x2="254" y2="152.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="1"/>
-<pinref part="SUPPLY7" gate="G$1" pin="AGND"/>
-<wire x1="254" y1="119.38" x2="254" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="1"/>
-<pinref part="SUPPLY8" gate="G$1" pin="AGND"/>
-<wire x1="254" y1="83.82" x2="254" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R20" gate="G$1" pin="1"/>
-<pinref part="SUPPLY12" gate="G$1" pin="AGND"/>
-<wire x1="114.3" y1="12.7" x2="114.3" y2="10.16" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
-<pinref part="R19" gate="G$1" pin="1"/>
-<pinref part="SUPPLY13" gate="G$1" pin="AGND"/>
-<wire x1="127" y1="12.7" x2="127" y2="10.16" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
-<pinref part="R24" gate="G$1" pin="1"/>
-<pinref part="SUPPLY14" gate="G$1" pin="AGND"/>
-<wire x1="114.3" y1="45.72" x2="114.3" y2="48.26" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<pinref part="SUPPLY15" gate="G$1" pin="AGND"/>
-<wire x1="127" y1="45.72" x2="127" y2="48.26" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="12.7" x2="101.6" y2="10.16" width="0.1524" layer="91" style="longdash"/>
-<pinref part="SUPPLY16" gate="G$1" pin="AGND"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2522,6 +2396,79 @@ SMT- SWCH-08247</description>
 <wire x1="116.84" y1="185.42" x2="116.84" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="185.42" x2="116.84" y2="185.42" width="0.1524" layer="91"/>
 <junction x="116.84" y="185.42"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="GND"/>
+<wire x1="73.66" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="25.4" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<junction x="71.12" y="25.4"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="12.7" x2="114.3" y2="10.16" width="0.1524" layer="91" style="longdash"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="127" y1="12.7" x2="127" y2="10.16" width="0.1524" layer="91" style="longdash"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="12.7" x2="101.6" y2="10.16" width="0.1524" layer="91" style="longdash"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="114.3" y1="45.72" x2="114.3" y2="48.26" width="0.1524" layer="91" style="longdash"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="127" y1="45.72" x2="127" y2="48.26" width="0.1524" layer="91" style="longdash"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="83.82" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="119.38" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="154.94" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="190.5" x2="25.4" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="1"/>
+<wire x1="254" y1="83.82" x2="254" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="1"/>
+<wire x1="254" y1="119.38" x2="254" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="1"/>
+<wire x1="254" y1="154.94" x2="254" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="1"/>
+<wire x1="254" y1="190.5" x2="254" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="AUDIO_IN_RIGHT" class="0">
