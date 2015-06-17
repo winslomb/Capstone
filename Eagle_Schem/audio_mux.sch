@@ -1990,18 +1990,18 @@ SMT- SWCH-08247</description>
 <part name="D4" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="U$10" library="tpa152" deviceset="TPA152D" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1 uF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1 uF"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20K"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20K"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
+<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
 <part name="U$5" library="headphone_jack" deviceset="SJ1-3513N" device=""/>
 <part name="OK9" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
 <part name="OK10" library="optocoupler" deviceset="TLP283" device="" value="TLP172A"/>
@@ -2022,14 +2022,14 @@ SMT- SWCH-08247</description>
 <part name="D6" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="D7" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="D8" library="SparkFun-LED" deviceset="LED" device="1206"/>
-<part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R14" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="270"/>
+<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
+<part name="R17" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
+<part name="R18" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="90"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="R19" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="20K"/>
@@ -2066,6 +2066,7 @@ SMT- SWCH-08247</description>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2193,6 +2194,7 @@ SMT- SWCH-08247</description>
 <instance part="GND26" gate="1" x="254" y="114.3" rot="MR0"/>
 <instance part="GND27" gate="1" x="254" y="149.86" rot="MR0"/>
 <instance part="GND28" gate="1" x="254" y="185.42" rot="MR0"/>
+<instance part="GND12" gate="1" x="101.6" y="38.1" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2449,6 +2451,13 @@ SMT- SWCH-08247</description>
 <pinref part="U$5" gate="G$1" pin="1"/>
 <wire x1="254" y1="190.5" x2="254" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$10" gate="G$1" pin="MUTE"/>
+<wire x1="99.06" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91" style="longdash"/>
+<wire x1="101.6" y1="33.02" x2="101.6" y2="35.56" width="0.1524" layer="91" style="longdash"/>
+<label x="101.6" y="35.56" size="1.778" layer="95" rot="R90"/>
+<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="AUDIO_IN_RIGHT" class="0">
@@ -3093,14 +3102,6 @@ SMT- SWCH-08247</description>
 <wire x1="127" y1="33.02" x2="134.62" y2="33.02" width="0.1524" layer="91" style="longdash"/>
 <wire x1="127" y1="35.56" x2="127" y2="33.02" width="0.1524" layer="91" style="longdash"/>
 <junction x="127" y="33.02"/>
-</segment>
-</net>
-<net name="MUTE" class="0">
-<segment>
-<pinref part="U$10" gate="G$1" pin="MUTE"/>
-<wire x1="99.06" y1="33.02" x2="101.6" y2="33.02" width="0.1524" layer="91" style="longdash"/>
-<wire x1="101.6" y1="33.02" x2="101.6" y2="35.56" width="0.1524" layer="91" style="longdash"/>
-<label x="101.6" y="35.56" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$47" class="0">

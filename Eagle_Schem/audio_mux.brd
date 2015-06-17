@@ -141,6 +141,9 @@
 <wire x1="94" y1="0" x2="94" y2="58" width="0" layer="20"/>
 <wire x1="94" y1="58" x2="0" y2="58" width="0" layer="20"/>
 <wire x1="0" y1="58" x2="0" y2="0" width="0" layer="20"/>
+<hole x="92.5" y="56.5" drill="1"/>
+<hole x="1.5" y="56.5" drill="1"/>
+<text x="64" y="55" size="1.778" layer="21">Matt Winslow</text>
 </plain>
 <libraries>
 <library name="headphone_jack">
@@ -640,18 +643,18 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D3" library="SparkFun-LED" package="LED-1206" value="" x="20" y="20" rot="R180"/>
 <element name="D4" library="SparkFun-LED" package="LED-1206" value="" x="20" y="7" rot="R180"/>
 <element name="U$10" library="tpa152" package="SOIC8" value="TPA152D" x="43" y="40" rot="R270"/>
-<element name="C1" library="SparkFun-Capacitors" package="0805" value="" x="45.5" y="46"/>
-<element name="C2" library="SparkFun-Capacitors" package="0805" value="" x="40.5" y="46" rot="R180"/>
+<element name="C1" library="SparkFun-Capacitors" package="0805" value="1 uF" x="45.5" y="46"/>
+<element name="C2" library="SparkFun-Capacitors" package="0805" value="1 uF" x="40.5" y="46" rot="R180"/>
 <element name="R1" library="SparkFun-Resistors" package="0805" value="20K" x="45.5" y="44" rot="R180"/>
 <element name="R2" library="SparkFun-Resistors" package="0805" value="20K" x="40.5" y="44"/>
-<element name="R3" library="SparkFun-Resistors" package="0805" value="" x="25" y="44" rot="R90"/>
-<element name="R4" library="SparkFun-Resistors" package="0805" value="" x="25" y="31" rot="R90"/>
-<element name="R5" library="SparkFun-Resistors" package="0805" value="" x="25" y="18" rot="R90"/>
-<element name="R6" library="SparkFun-Resistors" package="0805" value="" x="25" y="5" rot="R90"/>
-<element name="R7" library="SparkFun-Resistors" package="0805" value="" x="25" y="48" rot="R90"/>
-<element name="R8" library="SparkFun-Resistors" package="0805" value="" x="25" y="35" rot="R90"/>
-<element name="R9" library="SparkFun-Resistors" package="0805" value="" x="25" y="22" rot="R90"/>
-<element name="R10" library="SparkFun-Resistors" package="0805" value="" x="25" y="9" rot="R90"/>
+<element name="R3" library="SparkFun-Resistors" package="0805" value="270" x="25" y="44" rot="R90"/>
+<element name="R4" library="SparkFun-Resistors" package="0805" value="270" x="25" y="31" rot="R90"/>
+<element name="R5" library="SparkFun-Resistors" package="0805" value="270" x="25" y="18" rot="R90"/>
+<element name="R6" library="SparkFun-Resistors" package="0805" value="270" x="25" y="5" rot="R90"/>
+<element name="R7" library="SparkFun-Resistors" package="0805" value="90" x="25" y="48" rot="R90"/>
+<element name="R8" library="SparkFun-Resistors" package="0805" value="90" x="25" y="35" rot="R90"/>
+<element name="R9" library="SparkFun-Resistors" package="0805" value="90" x="25" y="22" rot="R90"/>
+<element name="R10" library="SparkFun-Resistors" package="0805" value="90" x="25" y="9" rot="R90"/>
 <element name="U$5" library="headphone_jack" package="SJ1-351XN" value="SJ1-3513N" x="92.13" y="46" rot="R180"/>
 <element name="OK9" library="optocoupler" package="MINI-FLAT-4" value="TLP172A" x="74" y="42" smashed="yes">
 <attribute name="MF" value="" x="74" y="54" size="1.778" layer="27" display="off"/>
@@ -718,14 +721,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D8" library="SparkFun-LED" package="LED-1206" value="" x="74" y="7" smashed="yes">
 <attribute name="VALUE" x="72.984" y="5.222" size="0.4064" layer="27"/>
 </element>
-<element name="R11" library="SparkFun-Resistors" package="0805" value="" x="69" y="48" rot="R270"/>
-<element name="R12" library="SparkFun-Resistors" package="0805" value="" x="69" y="35" rot="R270"/>
-<element name="R13" library="SparkFun-Resistors" package="0805" value="" x="69" y="22" rot="R270"/>
-<element name="R14" library="SparkFun-Resistors" package="0805" value="" x="69" y="9" rot="R270"/>
-<element name="R15" library="SparkFun-Resistors" package="0805" value="" x="69" y="44" rot="R270"/>
-<element name="R16" library="SparkFun-Resistors" package="0805" value="" x="69" y="31" rot="R270"/>
-<element name="R17" library="SparkFun-Resistors" package="0805" value="" x="69" y="18" rot="R270"/>
-<element name="R18" library="SparkFun-Resistors" package="0805" value="" x="69" y="5" rot="R270"/>
+<element name="R11" library="SparkFun-Resistors" package="0805" value="270" x="69" y="48" rot="R270"/>
+<element name="R12" library="SparkFun-Resistors" package="0805" value="270" x="69" y="35" rot="R270"/>
+<element name="R13" library="SparkFun-Resistors" package="0805" value="270" x="69" y="22" rot="R270"/>
+<element name="R14" library="SparkFun-Resistors" package="0805" value="270" x="69" y="9" rot="R270"/>
+<element name="R15" library="SparkFun-Resistors" package="0805" value="90" x="69" y="44" rot="R270"/>
+<element name="R16" library="SparkFun-Resistors" package="0805" value="90" x="69" y="31" rot="R270"/>
+<element name="R17" library="SparkFun-Resistors" package="0805" value="90" x="69" y="18" rot="R270"/>
+<element name="R18" library="SparkFun-Resistors" package="0805" value="90" x="69" y="5" rot="R270"/>
 <element name="C3" library="SparkFun-Capacitors" package="0805" value="1uF" x="45" y="36"/>
 <element name="R19" library="SparkFun-Resistors" package="0805" value="100" x="51.5" y="46"/>
 <element name="R20" library="SparkFun-Resistors" package="0805" value="20K" x="51.5" y="44"/>
@@ -834,6 +837,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="46" y="19" extent="1-16" drill="0.6" shape="square"/>
 <via x="13" y="7" extent="1-16" drill="0.6" shape="square"/>
 <via x="67.5" y="40" extent="1-16" drill="0.6" shape="square"/>
+<contactref element="U$10" pad="2"/>
 </signal>
 <signal name="AUDIO_IN_RIGHT">
 <contactref element="OK2" pad="3"/>
@@ -1503,9 +1507,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="72" y1="35" x2="69" y2="38" width="0.4064" layer="16"/>
 <wire x1="69" y1="38" x2="66.5" y2="38" width="0.4064" layer="16"/>
 <wire x1="66.5" y1="38" x2="65" y2="39.5" width="0.4064" layer="16"/>
-</signal>
-<signal name="MUTE">
-<contactref element="U$10" pad="2"/>
 </signal>
 <signal name="N$47">
 <contactref element="U$10" pad="3"/>
