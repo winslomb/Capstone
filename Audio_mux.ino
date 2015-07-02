@@ -3,7 +3,7 @@
 	Audio Mux
 	Controls the audio input/output switching
  */
- 
+
 // constants won't change. They're used here to
 // set pin numbers:
 const int button_1 = 2;
@@ -35,23 +35,41 @@ int buttonState_8 = 0;
 
 void setup() {
   // initialize the Button pins as an Inputs:
-  pinMode(button_1, INPUT);
-  pinMode(button_2, INPUT);
-  pinMode(button_3, INPUT);
-  pinMode(button_4, INPUT);
-  pinMode(button_5, INPUT);
-  pinMode(button_6, INPUT);
-  pinMode(button_7, INPUT);
-  pinMode(button_8, INPUT);
-  // initialize the relays as Outputs:
-  pinMode(out_0, OUTPUT);
-  pinMode(out_1, OUTPUT);
-  pinMode(out_2, OUTPUT);
-  pinMode(out_3, OUTPUT);
-  pinMode(in_0, OUTPUT);
-  pinMode(in_1, OUTPUT);
-  pinMode(in_2, OUTPUT);
-  pinMode(in_3, OUTPUT);
+	pinMode(button_1, INPUT);
+	pinMode(button_2, INPUT);
+	pinMode(button_3, INPUT);
+	pinMode(button_4, INPUT);
+	pinMode(button_5, INPUT);
+	pinMode(button_6, INPUT);
+	pinMode(button_7, INPUT);
+	pinMode(button_8, INPUT);
+	// enable the pullups
+	digitalWrite(button_1, HIGH);
+	digitalWrite(button_2, HIGH);
+	digitalWrite(button_3, HIGH);
+	digitalWrite(button_4, HIGH);
+	digitalWrite(button_5, HIGH);
+	digitalWrite(button_6, HIGH);
+	digitalWrite(button_7, HIGH);
+	digitalWrite(button_8, HIGH);
+	// initialize the relays as Outputs:
+	pinMode(out_0, OUTPUT);
+	pinMode(out_1, OUTPUT);
+	pinMode(out_2, OUTPUT);
+	pinMode(out_3, OUTPUT);
+	pinMode(in_0, OUTPUT);
+	pinMode(in_1, OUTPUT);
+	pinMode(in_2, OUTPUT);
+	pinMode(in_3, OUTPUT);
+	// Pre-set States
+	digitalWrite(out_1, LOW);   // turn relays off
+	digitalWrite(out_2, LOW);
+	digitalWrite(out_3, LOW);
+	digitalWrite(out_0, HIGH);  // turn relay on
+	digitalWrite(in_1,LOW);    // turn relays off
+	digitalWrite(in_2, LOW);
+	digitalWrite(in_3, LOW);
+	digitalWrite(in_0, HIGH);  // turn relay on
 }
 
 void loop(){
@@ -67,52 +85,52 @@ void loop(){
 
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
-  if (buttonState_1 == HIGH) {        
+  if (buttonState_1 == LOW) {
     digitalWrite(out_0, LOW); 	// turn relays off
-	digitalWrite(out_1, LOW); 
-    digitalWrite(out_2, LOW); 	
+	digitalWrite(out_1, LOW);
+    digitalWrite(out_2, LOW);
     digitalWrite(out_3, HIGH);  // turn relay on
   }
-  if (buttonState_2 == HIGH) {        
+  if (buttonState_2 == LOW) {
     digitalWrite(out_0, LOW); 	// turn relays off
-	digitalWrite(out_1, LOW); 
-    digitalWrite(out_3, LOW); 	
+	digitalWrite(out_1, LOW);
+    digitalWrite(out_3, LOW);
     digitalWrite(out_2, HIGH);  // turn relay on
   }
-    if (buttonState_3 == HIGH) {        
+    if (buttonState_3 == LOW) {
     digitalWrite(out_0, LOW); 	// turn relays off
-	digitalWrite(out_2, LOW); 
-    digitalWrite(out_3, LOW); 	
+	digitalWrite(out_2, LOW);
+    digitalWrite(out_3, LOW);
     digitalWrite(out_1, HIGH);  // turn relay on
   }
-  if (buttonState_4 == HIGH) {        
+  if (buttonState_4 == LOW) {
     digitalWrite(out_1, LOW); 	// turn relays off
-	digitalWrite(out_2, LOW); 
-    digitalWrite(out_3, LOW); 	
+	digitalWrite(out_2, LOW);
+    digitalWrite(out_3, LOW);
     digitalWrite(out_0, HIGH);  // turn relay on
   }
-  if (buttonState_5 == HIGH) {        
+  if (buttonState_5 == LOW) {
     digitalWrite(in_0, LOW); 	// turn relays off
-	digitalWrite(in_1, LOW); 
-    digitalWrite(in_2, LOW); 	
+	digitalWrite(in_1, LOW);
+    digitalWrite(in_2, LOW);
     digitalWrite(in_3, HIGH);  // turn relay on
   }
-  if (buttonState_6 == HIGH) {        
+  if (buttonState_6 == LOW) {
     digitalWrite(in_0, LOW); 	// turn relays off
-	digitalWrite(in_1, LOW); 
-    digitalWrite(in_3, LOW); 	
+	digitalWrite(in_1, LOW);
+    digitalWrite(in_3, LOW);
     digitalWrite(in_2, HIGH);  // turn relay on
   }
-  if (buttonState_7 == HIGH) {        
+  if (buttonState_7 == LOW) {
     digitalWrite(in_0, LOW); 	// turn relays off
-	digitalWrite(in_2, LOW); 
-    digitalWrite(in_3, LOW); 	
+	digitalWrite(in_2, LOW);
+    digitalWrite(in_3, LOW);
     digitalWrite(in_1, HIGH);  // turn relay on
   }
-  if (buttonState_8 == HIGH) {        
+  if (buttonState_8 == LOW) {
     digitalWrite(in_1, LOW); 	// turn relays off
-	digitalWrite(in_2, LOW); 
-    digitalWrite(in_3, LOW); 	
+	digitalWrite(in_2, LOW);
+    digitalWrite(in_3, LOW);
     digitalWrite(in_0, HIGH);  // turn relay on
   }
 }
