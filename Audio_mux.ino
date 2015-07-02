@@ -10,9 +10,9 @@ const int button_1 = 2;
 const int button_2 = 3;
 const int button_3 = 4;
 const int button_4 = 5;
-const int button_5 = 13;
-const int button_6 = 12;
-const int button_7 = 11;
+const int button_5 = 15;
+const int button_6 = 14;
+const int button_7 = 16;
 const int button_8 = 10;
 const int out_0 =  9;
 const int out_1 =  8;
@@ -113,24 +113,24 @@ void loop(){
     digitalWrite(in_0, LOW); 	// turn relays off
 	digitalWrite(in_1, LOW);
     digitalWrite(in_2, LOW);
-    digitalWrite(in_3, HIGH);  // turn relay on
+    digitalWrite(in_3, HIGH); 	// turn relay on
   }
   if (buttonState_6 == LOW) {
     digitalWrite(in_0, LOW); 	// turn relays off
 	digitalWrite(in_1, LOW);
     digitalWrite(in_3, LOW);
-    digitalWrite(in_2, HIGH);  // turn relay on
+    digitalWrite(in_2, HIGH);	// turn relay on
   }
   if (buttonState_7 == LOW) {
     digitalWrite(in_0, LOW); 	// turn relays off
 	digitalWrite(in_2, LOW);
     digitalWrite(in_3, LOW);
-    digitalWrite(in_1, HIGH);  // turn relay on
+    digitalWrite(in_1, HIGH);	// turn relay on
   }
   if (buttonState_8 == LOW) {
     digitalWrite(in_1, LOW); 	// turn relays off
 	digitalWrite(in_2, LOW);
     digitalWrite(in_3, LOW);
-    digitalWrite(in_0, HIGH);  // turn relay on
+    digitalWrite(in_0, HIGH);	// turn relay on
   }
 }
